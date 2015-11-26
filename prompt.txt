@@ -1,0 +1,9 @@
+create a react application that shows different chart types
+
+see how well I can create a general component with react
+**oop stuff with chart inheritance..?
+*use flux for M, C in mvc
+*use react for V
+
+
+chart.js
