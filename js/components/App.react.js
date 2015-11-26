@@ -25,13 +25,12 @@ function generateOptions(datasets) {
 }
 
 var chartOptions = {
-	bezierCurve: true,
 	scaleFontFamily: "'Lato', sans-serif",
 	tooltipFontFamily: "'Lato', sans-serif",
 	tooltipTitleFontFamily: "'Lato', sans-serif",
 };
 
-var canvasProperties = {width: '600', height: '400'};
+var canvasProperties = {};
 
 var App = React.createClass({
 	getInitialState: function() {
@@ -63,6 +62,7 @@ var App = React.createClass({
 					data={selectedDataset.data} 
 					chartOptions={chartOptions} 
 					canvasProperties={canvasProperties}
+					id='chartContainer'
 				/>
 			</div>
 			);

@@ -34,6 +34,9 @@ var MyChart = React.createClass({
 
 	buildChart: function() {
 		var ctx = ReactDOM.findDOMNode(this.refs.chartCanvas).getContext('2d');
+		//chart is at most 1000 px wide, otherwise is .9*window width
+		//ctx.canvas.width  = (window.innerWidth * .9  > 1000 ? 1000 : window.innerWidth * .9);
+  		//ctx.canvas.height = ctx.canvas.width*(10/16);//maintain 16*10 aspect ratio 
 		var chart = new Chartjs(ctx)[this.props.chartType](this.props.data, this.props.chartOptions || {});
 		//var legend = chart.generateLegend();
 		//TODO: legend
