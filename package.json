@@ -1,8 +1,10 @@
 {
-  "name": "charting-app",
+  "name": "appcow_tryout",
   "version": "0.0.1",
   "description": "Charting app that uses Reactjs, Chartjs, and the Flux architecture",
   "main": "js/app.js",
+  "url" : "https://github.com/kaspyyy/appcow_tryout", 
+  "email" : "kaspnilsson@gmail.com",
   "dependencies": {
     "chart.js": "^1.0.2",
     "merge": "^1.2.0",
